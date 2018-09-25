@@ -21,6 +21,8 @@
 		F80604C32159668B0086390D /* PagesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C22159668B0086390D /* PagesDetailViewController.swift */; };
 		F80604C5215966A60086390D /* ItemsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C4215966A60086390D /* ItemsDetailViewController.swift */; };
 		F80604C7215966B80086390D /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C6215966B80086390D /* PreferencesViewController.swift */; };
+		F80604CA2159C15F0086390D /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C92159C15F0086390D /* Campaign.swift */; };
+		F80604CC2159C2800086390D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604CB2159C2800086390D /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		F80604C22159668B0086390D /* PagesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesDetailViewController.swift; sourceTree = "<group>"; };
 		F80604C4215966A60086390D /* ItemsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsDetailViewController.swift; sourceTree = "<group>"; };
 		F80604C6215966B80086390D /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		F80604C92159C15F0086390D /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
+		F80604CB2159C2800086390D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				F80604A1215960480086390D /* AppDelegate.swift */,
+				F80604C82159C0240086390D /* Models */,
 				F80604B3215965010086390D /* ViewControllers */,
 				F80604A5215960480086390D /* Main.storyboard */,
 				F80604A8215960480086390D /* Assets.xcassets */,
@@ -97,6 +102,15 @@
 				F80604C6215966B80086390D /* PreferencesViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F80604C82159C0240086390D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F80604C92159C15F0086390D /* Campaign.swift */,
+				F80604CB2159C2800086390D /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F80604CC2159C2800086390D /* User.swift in Sources */,
 				F80604C5215966A60086390D /* ItemsDetailViewController.swift in Sources */,
+				F80604CA2159C15F0086390D /* Campaign.swift in Sources */,
 				F80604BB2159664E0086390D /* CharacterTableViewController.swift in Sources */,
 				F80604C32159668B0086390D /* PagesDetailViewController.swift in Sources */,
 				F80604BF215966670086390D /* ItemsTableViewController.swift in Sources */,
