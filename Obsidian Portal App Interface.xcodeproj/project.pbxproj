@@ -25,6 +25,13 @@
 		F80604CC2159C2800086390D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604CB2159C2800086390D /* User.swift */; };
 		F8494768215AAB7C00E15E42 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8494767215AAB7C00E15E42 /* OAuthSwift.framework */; };
 		F8494769215AAB7C00E15E42 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8494767215AAB7C00E15E42 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F849476C215AACF900E15E42 /* OAuth Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F849476B215AACF900E15E42 /* OAuth Helper.swift */; };
+		F849476F215AC47000E15E42 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F849476E215AC47000E15E42 /* WebView.swift */; };
+		F8494771215AC50200E15E42 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8494770215AC50200E15E42 /* Services.swift */; };
+		F8494773215AC57B00E15E42 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8494772215AC57B00E15E42 /* FormViewController.swift */; };
+		F8494775215AC5D000E15E42 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8494774215AC5D000E15E42 /* Storyboards.swift */; };
+		F8494778215ACDA200E15E42 /* Services.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8494777215ACDA200E15E42 /* Services.plist */; };
+		F849477A215ACEF200E15E42 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8494779215ACEF200E15E42 /* Constants.swift */; };
 		F8AAE03C215A9653003BD465 /* PagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AAE03B215A9653003BD465 /* PagesTableViewCell.swift */; };
 		F8AAE03E215A9667003BD465 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AAE03D215A9667003BD465 /* CharacterTableViewCell.swift */; };
 		F8AAE040215A966F003BD465 /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AAE03F215A966F003BD465 /* ItemsTableViewCell.swift */; };
@@ -65,6 +72,13 @@
 		F80604C92159C15F0086390D /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		F80604CB2159C2800086390D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F8494767215AAB7C00E15E42 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
+		F849476B215AACF900E15E42 /* OAuth Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OAuth Helper.swift"; sourceTree = "<group>"; };
+		F849476E215AC47000E15E42 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		F8494770215AC50200E15E42 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		F8494772215AC57B00E15E42 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		F8494774215AC5D000E15E42 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		F8494777215ACDA200E15E42 /* Services.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Services.plist; sourceTree = "<group>"; };
+		F8494779215ACEF200E15E42 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F8AAE03B215A9653003BD465 /* PagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesTableViewCell.swift; sourceTree = "<group>"; };
 		F8AAE03D215A9667003BD465 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		F8AAE03F215A966F003BD465 /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
@@ -113,6 +127,7 @@
 				F80604A8215960480086390D /* Assets.xcassets */,
 				F80604AA215960480086390D /* LaunchScreen.storyboard */,
 				F80604AD215960480086390D /* Info.plist */,
+				F849476D215AC45700E15E42 /* OAuth Support */,
 			);
 			path = "Obsidian Portal App Interface";
 			sourceTree = "<group>";
@@ -137,6 +152,20 @@
 				F80604CB2159C2800086390D /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F849476D215AC45700E15E42 /* OAuth Support */ = {
+			isa = PBXGroup;
+			children = (
+				F849476B215AACF900E15E42 /* OAuth Helper.swift */,
+				F849476E215AC47000E15E42 /* WebView.swift */,
+				F8494770215AC50200E15E42 /* Services.swift */,
+				F8494772215AC57B00E15E42 /* FormViewController.swift */,
+				F8494774215AC5D000E15E42 /* Storyboards.swift */,
+				F8494777215ACDA200E15E42 /* Services.plist */,
+				F8494779215ACEF200E15E42 /* Constants.swift */,
+			);
+			path = "OAuth Support";
 			sourceTree = "<group>";
 		};
 		F8AAE03A215A961B003BD465 /* Cells */ = {
@@ -179,6 +208,7 @@
 				F806049B215960480086390D /* Frameworks */,
 				F806049C215960480086390D /* Resources */,
 				F849476A215AAB7C00E15E42 /* Embed Frameworks */,
+				F8494776215ACB6D00E15E42 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -227,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8494778215ACDA200E15E42 /* Services.plist in Resources */,
 				F80604AC215960480086390D /* LaunchScreen.storyboard in Resources */,
 				F80604A9215960480086390D /* Assets.xcassets in Resources */,
 				F80604A7215960480086390D /* Main.storyboard in Resources */,
@@ -234,6 +265,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F8494776215ACB6D00E15E42 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/OAuthSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/OAuthSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F806049A215960480086390D /* Sources */ = {
@@ -244,14 +297,20 @@
 				F80604C5215966A60086390D /* ItemsDetailViewController.swift in Sources */,
 				F8AAE03E215A9667003BD465 /* CharacterTableViewCell.swift in Sources */,
 				F80604CA2159C15F0086390D /* Campaign.swift in Sources */,
+				F8494775215AC5D000E15E42 /* Storyboards.swift in Sources */,
 				F80604BB2159664E0086390D /* CharacterTableViewController.swift in Sources */,
+				F849477A215ACEF200E15E42 /* Constants.swift in Sources */,
+				F8494771215AC50200E15E42 /* Services.swift in Sources */,
 				F8AAE03C215A9653003BD465 /* PagesTableViewCell.swift in Sources */,
 				F80604C32159668B0086390D /* PagesDetailViewController.swift in Sources */,
 				F8AAE044215AA76E003BD465 /* PagesController.swift in Sources */,
+				F8494773215AC57B00E15E42 /* FormViewController.swift in Sources */,
+				F849476C215AACF900E15E42 /* OAuth Helper.swift in Sources */,
 				F80604BF215966670086390D /* ItemsTableViewController.swift in Sources */,
 				F8AAE040215A966F003BD465 /* ItemsTableViewCell.swift in Sources */,
 				F80604B9215965FB0086390D /* CampaignSplashViewController.swift in Sources */,
 				F80604B72159655D0086390D /* CampaignTableViewController.swift in Sources */,
+				F849476F215AC47000E15E42 /* WebView.swift in Sources */,
 				F80604B52159653C0086390D /* OnboardingViewController.swift in Sources */,
 				F80604BD2159665E0086390D /* PagesTableViewController.swift in Sources */,
 				F80604C12159667F0086390D /* CharacterDetailViewController.swift in Sources */,
