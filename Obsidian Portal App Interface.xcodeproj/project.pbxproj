@@ -23,7 +23,27 @@
 		F80604C7215966B80086390D /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C6215966B80086390D /* PreferencesViewController.swift */; };
 		F80604CA2159C15F0086390D /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C92159C15F0086390D /* Campaign.swift */; };
 		F80604CC2159C2800086390D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604CB2159C2800086390D /* User.swift */; };
+		F8494768215AAB7C00E15E42 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8494767215AAB7C00E15E42 /* OAuthSwift.framework */; };
+		F8494769215AAB7C00E15E42 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8494767215AAB7C00E15E42 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8AAE03C215A9653003BD465 /* PagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AAE03B215A9653003BD465 /* PagesTableViewCell.swift */; };
+		F8AAE03E215A9667003BD465 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AAE03D215A9667003BD465 /* CharacterTableViewCell.swift */; };
+		F8AAE040215A966F003BD465 /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AAE03F215A966F003BD465 /* ItemsTableViewCell.swift */; };
+		F8AAE044215AA76E003BD465 /* PagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AAE043215AA76E003BD465 /* PagesController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F849476A215AAB7C00E15E42 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F8494769215AAB7C00E15E42 /* OAuthSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F806049E215960480086390D /* Obsidian Portal App Interface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Obsidian Portal App Interface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +64,11 @@
 		F80604C6215966B80086390D /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		F80604C92159C15F0086390D /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		F80604CB2159C2800086390D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F8494767215AAB7C00E15E42 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
+		F8AAE03B215A9653003BD465 /* PagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesTableViewCell.swift; sourceTree = "<group>"; };
+		F8AAE03D215A9667003BD465 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		F8AAE03F215A966F003BD465 /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
+		F8AAE043215AA76E003BD465 /* PagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8494768215AAB7C00E15E42 /* OAuthSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F80604A0215960480086390D /* Obsidian Portal App Interface */,
+				F8494767215AAB7C00E15E42 /* OAuthSwift.framework */,
 				F806049F215960480086390D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +105,9 @@
 			children = (
 				F80604A1215960480086390D /* AppDelegate.swift */,
 				F80604C82159C0240086390D /* Models */,
+				F8AAE042215AA740003BD465 /* Model Controllers */,
+				F8AAE041215A9B9A003BD465 /* TableViewControllers */,
+				F8AAE03A215A961B003BD465 /* Cells */,
 				F80604B3215965010086390D /* ViewControllers */,
 				F80604A5215960480086390D /* Main.storyboard */,
 				F80604A8215960480086390D /* Assets.xcassets */,
@@ -91,13 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				F80604B42159653C0086390D /* OnboardingViewController.swift */,
-				F80604B62159655D0086390D /* CampaignTableViewController.swift */,
 				F80604B8215965FB0086390D /* CampaignSplashViewController.swift */,
-				F80604BA2159664D0086390D /* CharacterTableViewController.swift */,
-				F80604BC2159665E0086390D /* PagesTableViewController.swift */,
-				F80604BE215966670086390D /* ItemsTableViewController.swift */,
-				F80604C02159667F0086390D /* CharacterDetailViewController.swift */,
 				F80604C22159668B0086390D /* PagesDetailViewController.swift */,
+				F80604C02159667F0086390D /* CharacterDetailViewController.swift */,
 				F80604C4215966A60086390D /* ItemsDetailViewController.swift */,
 				F80604C6215966B80086390D /* PreferencesViewController.swift */,
 			);
@@ -113,6 +139,35 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F8AAE03A215A961B003BD465 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F8AAE03B215A9653003BD465 /* PagesTableViewCell.swift */,
+				F8AAE03D215A9667003BD465 /* CharacterTableViewCell.swift */,
+				F8AAE03F215A966F003BD465 /* ItemsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F8AAE041215A9B9A003BD465 /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F80604B62159655D0086390D /* CampaignTableViewController.swift */,
+				F80604BC2159665E0086390D /* PagesTableViewController.swift */,
+				F80604BA2159664D0086390D /* CharacterTableViewController.swift */,
+				F80604BE215966670086390D /* ItemsTableViewController.swift */,
+			);
+			path = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		F8AAE042215AA740003BD465 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8AAE043215AA76E003BD465 /* PagesController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +178,7 @@
 				F806049A215960480086390D /* Sources */,
 				F806049B215960480086390D /* Frameworks */,
 				F806049C215960480086390D /* Resources */,
+				F849476A215AAB7C00E15E42 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,10 +242,14 @@
 			files = (
 				F80604CC2159C2800086390D /* User.swift in Sources */,
 				F80604C5215966A60086390D /* ItemsDetailViewController.swift in Sources */,
+				F8AAE03E215A9667003BD465 /* CharacterTableViewCell.swift in Sources */,
 				F80604CA2159C15F0086390D /* Campaign.swift in Sources */,
 				F80604BB2159664E0086390D /* CharacterTableViewController.swift in Sources */,
+				F8AAE03C215A9653003BD465 /* PagesTableViewCell.swift in Sources */,
 				F80604C32159668B0086390D /* PagesDetailViewController.swift in Sources */,
+				F8AAE044215AA76E003BD465 /* PagesController.swift in Sources */,
 				F80604BF215966670086390D /* ItemsTableViewController.swift in Sources */,
+				F8AAE040215A966F003BD465 /* ItemsTableViewCell.swift in Sources */,
 				F80604B9215965FB0086390D /* CampaignSplashViewController.swift in Sources */,
 				F80604B72159655D0086390D /* CampaignTableViewController.swift in Sources */,
 				F80604B52159653C0086390D /* OnboardingViewController.swift in Sources */,
@@ -344,6 +404,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J9VUCBX92;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Obsidian Portal App Interface/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -362,6 +426,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J9VUCBX92;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Obsidian Portal App Interface/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
