@@ -38,6 +38,12 @@ class CampaignController {
         
     }
     
+    // add player
+    
+    // add page (Create + append to campaign.pages
+    // update page (located at index of page in campaign.pages
+    // delete page 
+    
     // Read
     var campaigns: [Campaign] = []
     var currentCampaign: Campaign?

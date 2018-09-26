@@ -13,7 +13,7 @@ class PagesController {
    // create new page
     
     func createPage(withTitle title: String, body: String, campaign: Campaign, shortDescription: String, pageType: pageType, associatedPlayers: [User]) {
-        let page = Page(campaign: <#T##Campaign#>, title: <#T##String#>, shortDescription: <#T##String?#>, body: <#T##String#>, associatedPlayers: <#T##[User]?#>)
+        // let page = Page(campaign: <#T##Campaign#>, title: <#T##String#>, shortDescription: <#T##String?#>, body: <#T##String#>, associatedPlayers: <#T##[User]?#>)
     }
     
     // update existing pages

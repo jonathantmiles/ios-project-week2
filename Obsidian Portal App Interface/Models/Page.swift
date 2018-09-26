@@ -10,7 +10,7 @@ import Foundation
 
 struct Page: Codable, Equatable {
     
-    init(id: UUID = UUID(), campaign: Campaign, title: String, shortDescription: String?, body: String, pageType: pageType = .page, associatedPlayers: [User]?) {
+    init(id: UUID = UUID(), campaign: Campaign, title: String, shortDescription: String?, body: String, pageType: pageType = .page /*, associatedPlayers: [User]? */) {
         self.id = id
         self.campaign = campaign
         self.title = title
@@ -18,7 +18,7 @@ struct Page: Codable, Equatable {
         self.shortDescription = shortDescription ?? String(shortBody)
         self.body = body
         self.pageType = pageType.rawValue
-        self.associatedPlayers = associatedPlayers
+        // self.associatedPlayers = associatedPlayers
     }
     
     let id: UUID
@@ -29,7 +29,7 @@ struct Page: Codable, Equatable {
     /// can include normal pages, along with character, item, log pages
     // let relatedPages: [Page] // or UUID array // only implement if the UI exists for it
     let pageType: pageType.RawValue // enum or enum.rawValue
-    let associatedPlayers: [User]? // for character or item pages
+    // let associatedPlayers: [User]? // for character or item pages stretch: implement a UIPicker view
 }
 
 enum pageType: String, Codable {

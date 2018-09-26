@@ -285,6 +285,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="335" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="LXs-gW-RBw"/>
+                                        </constraints>
                                     </tableViewCell>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zU1-Ji-IAS">
                                         <rect key="frame" x="0.0" y="251" width="335" height="30"/>

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F80604A2215960480086390D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604A1215960480086390D /* AppDelegate.swift */; };
-		F80604A7215960480086390D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80604A5215960480086390D /* Main.storyboard */; };
 		F80604A9215960480086390D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80604A8215960480086390D /* Assets.xcassets */; };
 		F80604AC215960480086390D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80604AA215960480086390D /* LaunchScreen.storyboard */; };
 		F80604B52159653C0086390D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604B42159653C0086390D /* OnboardingViewController.swift */; };
@@ -25,6 +24,7 @@
 		F80604CC2159C2800086390D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604CB2159C2800086390D /* User.swift */; };
 		F842963F215BFCC200DB25E9 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = F842963E215BFCC200DB25E9 /* Page.swift */; };
 		F8429641215C043000DB25E9 /* CampaignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8429640215C043000DB25E9 /* CampaignController.swift */; };
+		F8429643215C43B800DB25E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8429642215C43B800DB25E9 /* Main.storyboard */; };
 		F8494768215AAB7C00E15E42 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8494767215AAB7C00E15E42 /* OAuthSwift.framework */; };
 		F8494769215AAB7C00E15E42 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8494767215AAB7C00E15E42 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F849476C215AACF900E15E42 /* OAuth Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F849476B215AACF900E15E42 /* OAuth Helper.swift */; };
@@ -57,7 +57,6 @@
 /* Begin PBXFileReference section */
 		F806049E215960480086390D /* Obsidian Portal App Interface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Obsidian Portal App Interface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80604A1215960480086390D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F80604A6215960480086390D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F80604A8215960480086390D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F80604AB215960480086390D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F80604AD215960480086390D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +74,7 @@
 		F80604CB2159C2800086390D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F842963E215BFCC200DB25E9 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		F8429640215C043000DB25E9 /* CampaignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignController.swift; sourceTree = "<group>"; };
+		F8429642215C43B800DB25E9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F8494767215AAB7C00E15E42 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
 		F849476B215AACF900E15E42 /* OAuth Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OAuth Helper.swift"; sourceTree = "<group>"; };
 		F849476E215AC47000E15E42 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -127,11 +127,11 @@
 				F8AAE041215A9B9A003BD465 /* TableViewControllers */,
 				F8AAE03A215A961B003BD465 /* Cells */,
 				F80604B3215965010086390D /* ViewControllers */,
-				F80604A5215960480086390D /* Main.storyboard */,
 				F80604A8215960480086390D /* Assets.xcassets */,
 				F80604AA215960480086390D /* LaunchScreen.storyboard */,
 				F80604AD215960480086390D /* Info.plist */,
 				F849476D215AC45700E15E42 /* OAuth Support */,
+				F8429642215C43B800DB25E9 /* Main.storyboard */,
 			);
 			path = "Obsidian Portal App Interface";
 			sourceTree = "<group>";
@@ -266,7 +266,7 @@
 				F8494778215ACDA200E15E42 /* Services.plist in Resources */,
 				F80604AC215960480086390D /* LaunchScreen.storyboard in Resources */,
 				F80604A9215960480086390D /* Assets.xcassets in Resources */,
-				F80604A7215960480086390D /* Main.storyboard in Resources */,
+				F8429643215C43B800DB25E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,14 +330,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F80604A5215960480086390D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F80604A6215960480086390D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F80604AA215960480086390D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
