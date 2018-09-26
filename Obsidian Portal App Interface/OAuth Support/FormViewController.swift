@@ -78,9 +78,11 @@ class FormViewController: FormViewControllerType {
         safariURLHandlerView.isHidden = !self.safariURLHandlerAvailable
         #endif
         self.urlHandlerType = .`internal`
+        
+        safariURLHandlerView.addSubview(webViewController.webView)
     }
     
-    
+    let webViewController = WebViewController()
     
     @IBOutlet weak var externalURLHandler: Button!
     @IBOutlet weak var internalURLHandler: Button!
