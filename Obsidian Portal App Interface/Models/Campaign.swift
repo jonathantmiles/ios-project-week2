@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct Campaign {
-    let id: String
+struct Campaign: Codable {
+    let id: UUID
     let name: String
-    let slug: String
-    let campaign_url: String // perhaps convert to snake case?
-    let visibility: String
-    let game_master: [User]
-    // ...
+    let gameMaster: [User] // array of user UUIDs?
+    let players: [User] // as above
+    let description: String
+    let gameSystem: String // or possibly enum / enum.rawValue
+    let pages: [Page] // or array of page UUIDs?
 }

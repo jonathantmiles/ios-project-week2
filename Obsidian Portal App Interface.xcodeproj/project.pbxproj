@@ -23,6 +23,7 @@
 		F80604C7215966B80086390D /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C6215966B80086390D /* PreferencesViewController.swift */; };
 		F80604CA2159C15F0086390D /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C92159C15F0086390D /* Campaign.swift */; };
 		F80604CC2159C2800086390D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604CB2159C2800086390D /* User.swift */; };
+		F842963F215BFCC200DB25E9 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = F842963E215BFCC200DB25E9 /* Page.swift */; };
 		F8494768215AAB7C00E15E42 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8494767215AAB7C00E15E42 /* OAuthSwift.framework */; };
 		F8494769215AAB7C00E15E42 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8494767215AAB7C00E15E42 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F849476C215AACF900E15E42 /* OAuth Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F849476B215AACF900E15E42 /* OAuth Helper.swift */; };
@@ -71,6 +72,7 @@
 		F80604C6215966B80086390D /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		F80604C92159C15F0086390D /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		F80604CB2159C2800086390D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F842963E215BFCC200DB25E9 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		F8494767215AAB7C00E15E42 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
 		F849476B215AACF900E15E42 /* OAuth Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OAuth Helper.swift"; sourceTree = "<group>"; };
 		F849476E215AC47000E15E42 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				F80604C92159C15F0086390D /* Campaign.swift */,
 				F80604CB2159C2800086390D /* User.swift */,
+				F842963E215BFCC200DB25E9 /* Page.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			files = (
 				F80604CC2159C2800086390D /* User.swift in Sources */,
 				F80604C5215966A60086390D /* ItemsDetailViewController.swift in Sources */,
+				F842963F215BFCC200DB25E9 /* Page.swift in Sources */,
 				F8AAE03E215A9667003BD465 /* CharacterTableViewCell.swift in Sources */,
 				F80604CA2159C15F0086390D /* Campaign.swift in Sources */,
 				F8494775215AC5D000E15E42 /* Storyboards.swift in Sources */,
