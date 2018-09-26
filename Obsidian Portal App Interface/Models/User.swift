@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct User: Codable {
+struct User: Codable, Equatable {
     let id: UUID // - A unique identifier for the given user. This will never change.
     let username: String // - The user's username. Note: The user can change this value.
     // let avatar_image_url: String // - The URL of the user's avatar image.

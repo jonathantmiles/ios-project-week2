@@ -8,16 +8,28 @@
 
 import Foundation
 
-struct Page: Codable {
+struct Page: Codable, Equatable {
+    
+    init(id: UUID = UUID(), campaign: Campaign, title: String, shortDescription: String?, body: String, pageType: pageType = .page, associatedPlayers: [User]?) {
+        self.id = id
+        self.campaign = campaign
+        self.title = title
+        let shortBody = Array(body.split(separator: ".")).first ?? ""
+        self.shortDescription = shortDescription ?? String(shortBody)
+        self.body = body
+        self.pageType = pageType.rawValue
+        self.associatedPlayers = associatedPlayers
+    }
+    
     let id: UUID
     let campaign: Campaign // or campaign.id
-    let name: String
+    let title: String
     let shortDescription: String
     let body: String
     /// can include normal pages, along with character, item, log pages
-    let relatedPages: [Page] // or UUID array // only implement if the UI exists for it
+    // let relatedPages: [Page] // or UUID array // only implement if the UI exists for it
     let pageType: pageType.RawValue // enum or enum.rawValue
-    let associatedPlayers: [User] // for character or item pages
+    let associatedPlayers: [User]? // for character or item pages
 }
 
 enum pageType: String, Codable {
