@@ -26,5 +26,7 @@ class CampaignSplashViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var bodyTextField: UITextView!
 }

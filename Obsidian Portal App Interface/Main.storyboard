@@ -6,6 +6,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,10 +36,37 @@
                     <view key="view" contentMode="scaleToFill" id="YKo-o5-zaM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nWw-FC-noA">
+                                <rect key="frame" x="16" y="136" width="343" height="462"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w2d-C2-htE">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add your bio here:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="haF-v4-931">
+                                        <rect key="frame" x="0.0" y="38" width="343" height="424"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nWw-FC-noA" firstAttribute="leading" secondItem="SLj-bd-fEw" secondAttribute="leading" constant="16" id="4EW-63-C3W"/>
+                            <constraint firstItem="SLj-bd-fEw" firstAttribute="trailing" secondItem="nWw-FC-noA" secondAttribute="trailing" constant="16" id="BoL-S1-2ws"/>
+                            <constraint firstItem="SLj-bd-fEw" firstAttribute="bottom" secondItem="nWw-FC-noA" secondAttribute="bottom" constant="20" id="IGD-3b-kHo"/>
+                            <constraint firstItem="nWw-FC-noA" firstAttribute="top" secondItem="SLj-bd-fEw" secondAttribute="top" constant="20" id="btX-cE-dCh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SLj-bd-fEw"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="AoH-3e-NKs"/>
+                    <navigationItem key="navigationItem" title="Title" id="AoH-3e-NKs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="MNC-1Z-xZx"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgh-BT-VvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,16 +151,66 @@
         <!--Title-->
         <scene sceneID="aR5-tj-EHZ">
             <objects>
-                <viewController id="Pwu-1O-cU6" sceneMemberID="viewController">
+                <viewController id="Pwu-1O-cU6" customClass="PagesDetailViewController" customModule="Obsidian_Portal_App_Interface" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OfT-XW-Flz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="22f-jc-vd8">
+                                <rect key="frame" x="16" y="136" width="343" height="466"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LZb-FR-11a">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                                        <segments>
+                                            <segment title="Log"/>
+                                            <segment title="Characters"/>
+                                            <segment title="Items"/>
+                                            <segment title="Pages"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lnI-vv-MeF">
+                                        <rect key="frame" x="0.0" y="36" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Short Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8yW-R8-czE">
+                                        <rect key="frame" x="0.0" y="74" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="A new page" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2VU-9n-Gkb">
+                                        <rect key="frame" x="0.0" y="112" width="343" height="354"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="22f-jc-vd8" firstAttribute="leading" secondItem="H6i-HA-tlb" secondAttribute="leading" constant="16" id="SMX-F3-6ad"/>
+                            <constraint firstItem="H6i-HA-tlb" firstAttribute="bottom" secondItem="22f-jc-vd8" secondAttribute="bottom" constant="16" id="peP-v5-X47"/>
+                            <constraint firstAttribute="trailing" secondItem="22f-jc-vd8" secondAttribute="trailing" constant="16" id="vMY-ho-42M"/>
+                            <constraint firstItem="22f-jc-vd8" firstAttribute="top" secondItem="H6i-HA-tlb" secondAttribute="top" constant="20" id="vyf-H7-Emv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="H6i-HA-tlb"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="PPU-c9-JeJ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Of2-ch-fUu"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Of2-ch-fUu">
+                            <connections>
+                                <action selector="Save:" destination="Pwu-1O-cU6" id="qh3-EM-2EK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bodyTextField" destination="2VU-9n-Gkb" id="bTc-gb-0IX"/>
+                        <outlet property="pageTypeSegmentedControl" destination="LZb-FR-11a" id="hXX-9b-spG"/>
+                        <outlet property="shortDescriptionTextField" destination="8yW-R8-czE" id="oqm-2t-auq"/>
+                        <outlet property="titleTextField" destination="lnI-vv-MeF" id="qPb-bo-NCR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HnG-52-vWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,14 +236,43 @@
         <!--Title-->
         <scene sceneID="XSX-Jk-bhB">
             <objects>
-                <viewController id="3Ia-yE-MRw" sceneMemberID="viewController">
+                <viewController id="3Ia-yE-MRw" customClass="CampaignSplashViewController" customModule="Obsidian_Portal_App_Interface" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bw0-1x-jzJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NHU-3A-PQ8">
+                                <rect key="frame" x="16" y="136" width="343" height="462"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Campaign Title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ihc-fV-v6B">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter information about your campaign here!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ehc-lW-2Nh">
+                                        <rect key="frame" x="0.0" y="38" width="343" height="424"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NHU-3A-PQ8" firstAttribute="top" secondItem="Pau-JO-ndg" secondAttribute="top" constant="20" id="Ntf-L8-fej"/>
+                            <constraint firstItem="NHU-3A-PQ8" firstAttribute="leading" secondItem="Pau-JO-ndg" secondAttribute="leading" constant="16" id="OoE-sH-qEc"/>
+                            <constraint firstItem="Pau-JO-ndg" firstAttribute="bottom" secondItem="NHU-3A-PQ8" secondAttribute="bottom" constant="20" id="dTo-hh-pQz"/>
+                            <constraint firstItem="Pau-JO-ndg" firstAttribute="trailing" secondItem="NHU-3A-PQ8" secondAttribute="trailing" constant="16" id="mhb-a9-qlP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Pau-JO-ndg"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="AAv-A8-Vyp"/>
+                    <connections>
+                        <outlet property="bodyTextField" destination="ehc-lW-2Nh" id="god-iB-wyO"/>
+                        <outlet property="nameTextField" destination="Ihc-fV-v6B" id="KZv-bb-CLS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5eh-Al-ITy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

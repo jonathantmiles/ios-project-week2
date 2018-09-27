@@ -13,10 +13,13 @@ class PagesDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // self.title = page.title ?? "Create New Page"
     }
     
-
+    @IBAction func Save(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -26,5 +29,12 @@ class PagesDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    // MARK: - Properties
+    
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var shortDescriptionTextField: UITextField!
+    @IBOutlet weak var bodyTextField: UITextView!
+    @IBOutlet weak var pageTypeSegmentedControl: UISegmentedControl!
+    
 }
