@@ -19,9 +19,22 @@ class PagesController {
     }
     
     // update existing pages
-    
+    func update(page: Page, withName name: String, shortDescription: String, body: String, pageType: pageType) {
+        var scratch = page
+        scratch.name = name
+        scratch.shortDescription = shortDescription
+        scratch.body = body
+        scratch.pageType = pageType.rawValue
+        guard let index = pages.firstIndex(of: page) else { return }
+        pages.remove(at: index)
+        pages.insert(scratch, at: index)
+    }
     
     // delete pages
+    func delete(page: Page) {
+        guard let index = pages.firstIndex(of: page) else { return }
+        pages.remove(at: index)
+    }
     
     // store pages
     var pages: [Page] = []
@@ -33,6 +46,15 @@ class PagesController {
     func updateCampaign(name: String, description: String) {
         campaign.name = name
         campaign.description = description
+    }
+    
+    // MARK: - Users
+    
+    var defaultUser = User(name: "NewUser")
+    
+    func updateUser(name: String, bio: String) {
+        defaultUser.name = name
+        defaultUser.bio = bio
     }
  
  }

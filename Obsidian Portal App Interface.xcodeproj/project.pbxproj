@@ -16,7 +16,6 @@
 		F80604CA2159C15F0086390D /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C92159C15F0086390D /* Campaign.swift */; };
 		F80604CC2159C2800086390D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604CB2159C2800086390D /* User.swift */; };
 		F842963F215BFCC200DB25E9 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = F842963E215BFCC200DB25E9 /* Page.swift */; };
-		F8429641215C043000DB25E9 /* CampaignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8429640215C043000DB25E9 /* CampaignController.swift */; };
 		F8429643215C43B800DB25E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8429642215C43B800DB25E9 /* Main.storyboard */; };
 		F8429645215C498300DB25E9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8429644215C498300DB25E9 /* RootViewController.swift */; };
 		F8494768215AAB7C00E15E42 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8494767215AAB7C00E15E42 /* OAuthSwift.framework */; };
@@ -53,7 +52,6 @@
 		F80604C92159C15F0086390D /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		F80604CB2159C2800086390D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F842963E215BFCC200DB25E9 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
-		F8429640215C043000DB25E9 /* CampaignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignController.swift; sourceTree = "<group>"; };
 		F8429642215C43B800DB25E9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F8429644215C498300DB25E9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		F8494767215AAB7C00E15E42 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 		F8AAE042215AA740003BD465 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F8429640215C043000DB25E9 /* CampaignController.swift */,
 				F8AAE043215AA76E003BD465 /* PagesController.swift */,
 			);
 			path = "Model Controllers";
@@ -251,7 +248,6 @@
 				F8AAE03C215A9653003BD465 /* PagesTableViewCell.swift in Sources */,
 				F80604C32159668B0086390D /* PagesDetailViewController.swift in Sources */,
 				F8AAE044215AA76E003BD465 /* PagesController.swift in Sources */,
-				F8429641215C043000DB25E9 /* CampaignController.swift in Sources */,
 				F8AAE040215A966F003BD465 /* ItemsTableViewCell.swift in Sources */,
 				F80604B9215965FB0086390D /* CampaignSplashViewController.swift in Sources */,
 				F80604BD2159665E0086390D /* PagesTableViewController.swift in Sources */,

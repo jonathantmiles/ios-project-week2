@@ -9,9 +9,13 @@
 import Foundation
 
 struct User: Codable, Equatable {
-    let id: UUID // - A unique identifier for the given user. This will never change.
-    let username: String // - The user's username. Note: The user can change this value.
-    // let avatar_image_url: String // - The URL of the user's avatar image.
-    let campaigns: [Campaign] // array of campaign UUIDs? // - campaign mini-object An array of the user's campaigns
-    let bio: String // self-description
+    init(id: UUID = UUID(), name: String, bio: String = "") {
+        self.id = id
+        self.name = name
+        self.bio = bio
+    }
+    
+    let id: UUID
+    var name: String
+    var bio: String
 }
