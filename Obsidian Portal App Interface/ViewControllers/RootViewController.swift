@@ -16,7 +16,7 @@ class RootViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    let campaignController = CampaignController()
+    // let campaignController = CampaignController()
 
     /*
     // MARK: - Navigation

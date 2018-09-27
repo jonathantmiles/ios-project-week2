@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PagesTableViewController: UITableViewController, RootViewController {
+class PagesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class PagesTableViewController: UITableViewController, RootViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return
+        return 0
     }
 
     

@@ -10,7 +10,7 @@ import Foundation
 
 struct Page: Codable, Equatable {
     
-    init(id: UUID = UUID(), name: String, shortDescription: String? = nil, body: String, pageType: pageType = .page) {
+    init(id: UUID = UUID(), name: String, shortDescription: String? = nil, body: String, pageType: PageType = .page) {
         self.id = id
         self.name = name
         let shortBody = Array(body.split(separator: ".")).first ?? ""
@@ -23,9 +23,13 @@ struct Page: Codable, Equatable {
     var name: String
     var shortDescription: String
     var body: String
-    var pageType: pageType.RawValue
+    var pageType: PageType.RawValue
 }
 
-enum pageType: String, Codable {
+enum PageType: String, Codable {
     case page, character, item, log, main
+    
+    static var allPageTypes: [PageType] {
+        return [.page, .character, .item, .log, .main]
+    }
 }

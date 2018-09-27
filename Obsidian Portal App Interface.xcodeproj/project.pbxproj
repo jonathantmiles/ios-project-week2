@@ -18,6 +18,8 @@
 		F842963F215BFCC200DB25E9 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = F842963E215BFCC200DB25E9 /* Page.swift */; };
 		F8429643215C43B800DB25E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8429642215C43B800DB25E9 /* Main.storyboard */; };
 		F8429645215C498300DB25E9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8429644215C498300DB25E9 /* RootViewController.swift */; };
+		F8429648215D492500DB25E9 /* Obsidian_Portal_App_Interface.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8429646215D492500DB25E9 /* Obsidian_Portal_App_Interface.xcdatamodeld */; };
+		F842964A215D49ED00DB25E9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8429649215D49ED00DB25E9 /* CoreDataStack.swift */; };
 		F8494768215AAB7C00E15E42 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8494767215AAB7C00E15E42 /* OAuthSwift.framework */; };
 		F8494769215AAB7C00E15E42 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8494767215AAB7C00E15E42 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8AAE03C215A9653003BD465 /* PagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AAE03B215A9653003BD465 /* PagesTableViewCell.swift */; };
@@ -54,6 +56,8 @@
 		F842963E215BFCC200DB25E9 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		F8429642215C43B800DB25E9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F8429644215C498300DB25E9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F8429647215D492500DB25E9 /* Obsidian_Portal_App_Interface.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Obsidian_Portal_App_Interface.xcdatamodel; sourceTree = "<group>"; };
+		F8429649215D49ED00DB25E9 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		F8494767215AAB7C00E15E42 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
 		F8AAE03B215A9653003BD465 /* PagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesTableViewCell.swift; sourceTree = "<group>"; };
 		F8AAE03D215A9667003BD465 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				F80604C92159C15F0086390D /* Campaign.swift */,
 				F80604CB2159C2800086390D /* User.swift */,
 				F842963E215BFCC200DB25E9 /* Page.swift */,
+				F8429646215D492500DB25E9 /* Obsidian_Portal_App_Interface.xcdatamodeld */,
+				F8429649215D49ED00DB25E9 /* CoreDataStack.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,8 +253,10 @@
 				F8429645215C498300DB25E9 /* RootViewController.swift in Sources */,
 				F8AAE03C215A9653003BD465 /* PagesTableViewCell.swift in Sources */,
 				F80604C32159668B0086390D /* PagesDetailViewController.swift in Sources */,
+				F842964A215D49ED00DB25E9 /* CoreDataStack.swift in Sources */,
 				F8AAE044215AA76E003BD465 /* PagesController.swift in Sources */,
 				F8AAE040215A966F003BD465 /* ItemsTableViewCell.swift in Sources */,
+				F8429648215D492500DB25E9 /* Obsidian_Portal_App_Interface.xcdatamodeld in Sources */,
 				F80604B9215965FB0086390D /* CampaignSplashViewController.swift in Sources */,
 				F80604BD2159665E0086390D /* PagesTableViewController.swift in Sources */,
 				F80604A2215960480086390D /* AppDelegate.swift in Sources */,
@@ -451,6 +459,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F8429646215D492500DB25E9 /* Obsidian_Portal_App_Interface.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F8429647215D492500DB25E9 /* Obsidian_Portal_App_Interface.xcdatamodel */,
+			);
+			currentVersion = F8429647215D492500DB25E9 /* Obsidian_Portal_App_Interface.xcdatamodel */;
+			path = Obsidian_Portal_App_Interface.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F8060496215960480086390D /* Project object */;
 }
