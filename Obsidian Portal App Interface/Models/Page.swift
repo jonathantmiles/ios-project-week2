@@ -10,10 +10,10 @@ import Foundation
 
 struct Page: Codable, Equatable {
     
-    init(id: UUID = UUID(), campaign: Campaign, title: String, shortDescription: String?, body: String, pageType: pageType = .page /*, associatedPlayers: [User]? */) {
+    init(id: UUID = UUID(), /* campaign: Campaign, */ name: String, shortDescription: String? = nil, body: String, pageType: pageType = .page /*, associatedPlayers: [User]? */) {
         self.id = id
-        self.campaign = campaign
-        self.title = title
+        //self.campaign = campaign
+        self.name = name
         let shortBody = Array(body.split(separator: ".")).first ?? ""
         self.shortDescription = shortDescription ?? String(shortBody)
         self.body = body
@@ -22,8 +22,8 @@ struct Page: Codable, Equatable {
     }
     
     let id: UUID
-    let campaign: Campaign // or campaign.id
-    let title: String
+    // let campaign: Campaign // or campaign.id
+    let name: String
     let shortDescription: String
     let body: String
     /// can include normal pages, along with character, item, log pages

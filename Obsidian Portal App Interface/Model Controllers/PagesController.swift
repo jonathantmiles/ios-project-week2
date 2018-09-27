@@ -10,17 +10,29 @@ import Foundation
 
 class PagesController {
     
-   // create new page
+    // MARK: - Pages
     
-    func createPage(withTitle title: String, body: String, campaign: Campaign, shortDescription: String, pageType: pageType, associatedPlayers: [User]) {
-        // let page = Page(campaign: <#T##Campaign#>, title: <#T##String#>, shortDescription: <#T##String?#>, body: <#T##String#>, associatedPlayers: <#T##[User]?#>)
+    // create new page
+    func createPage(withName name: String, body: String) {
+        let page = Page(name: name, body: body)
+        pages.append(page)
     }
     
     // update existing pages
     
+    
     // delete pages
     
-    // store new pages
+    // store pages
     var pages: [Page] = []
+    
+    // MARK: - Campaign
+    
+    var campaign = Campaign(name: "New Campaign")
+    
+    func updateCampaign(name: String, description: String) {
+        campaign.name = name
+        campaign.description = description
+    }
  
  }

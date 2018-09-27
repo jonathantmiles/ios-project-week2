@@ -28,8 +28,8 @@ class CampaignController {
     // Update
     func updateCampaign(name: String, gameMasters: [User], players: [User], description: String, system: system) {
         currentCampaign?.name = name
-        currentCampaign?.gameMasters = gameMasters
-        currentCampaign?.players = players
+        //currentCampaign?.gameMasters = gameMasters
+        //currentCampaign?.players = players
         currentCampaign?.description = description
         currentCampaign?.system = system.rawValue
     }

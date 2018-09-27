@@ -10,30 +10,17 @@
 		F80604A2215960480086390D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604A1215960480086390D /* AppDelegate.swift */; };
 		F80604A9215960480086390D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80604A8215960480086390D /* Assets.xcassets */; };
 		F80604AC215960480086390D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80604AA215960480086390D /* LaunchScreen.storyboard */; };
-		F80604B52159653C0086390D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604B42159653C0086390D /* OnboardingViewController.swift */; };
-		F80604B72159655D0086390D /* CampaignTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604B62159655D0086390D /* CampaignTableViewController.swift */; };
 		F80604B9215965FB0086390D /* CampaignSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604B8215965FB0086390D /* CampaignSplashViewController.swift */; };
-		F80604BB2159664E0086390D /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604BA2159664D0086390D /* CharacterTableViewController.swift */; };
 		F80604BD2159665E0086390D /* PagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604BC2159665E0086390D /* PagesTableViewController.swift */; };
-		F80604BF215966670086390D /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604BE215966670086390D /* ItemsTableViewController.swift */; };
-		F80604C12159667F0086390D /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C02159667F0086390D /* CharacterDetailViewController.swift */; };
 		F80604C32159668B0086390D /* PagesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C22159668B0086390D /* PagesDetailViewController.swift */; };
-		F80604C5215966A60086390D /* ItemsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C4215966A60086390D /* ItemsDetailViewController.swift */; };
-		F80604C7215966B80086390D /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C6215966B80086390D /* PreferencesViewController.swift */; };
 		F80604CA2159C15F0086390D /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604C92159C15F0086390D /* Campaign.swift */; };
 		F80604CC2159C2800086390D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80604CB2159C2800086390D /* User.swift */; };
 		F842963F215BFCC200DB25E9 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = F842963E215BFCC200DB25E9 /* Page.swift */; };
 		F8429641215C043000DB25E9 /* CampaignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8429640215C043000DB25E9 /* CampaignController.swift */; };
 		F8429643215C43B800DB25E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8429642215C43B800DB25E9 /* Main.storyboard */; };
+		F8429645215C498300DB25E9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8429644215C498300DB25E9 /* RootViewController.swift */; };
 		F8494768215AAB7C00E15E42 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8494767215AAB7C00E15E42 /* OAuthSwift.framework */; };
 		F8494769215AAB7C00E15E42 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8494767215AAB7C00E15E42 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F849476C215AACF900E15E42 /* OAuth Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F849476B215AACF900E15E42 /* OAuth Helper.swift */; };
-		F849476F215AC47000E15E42 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F849476E215AC47000E15E42 /* WebView.swift */; };
-		F8494771215AC50200E15E42 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8494770215AC50200E15E42 /* Services.swift */; };
-		F8494773215AC57B00E15E42 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8494772215AC57B00E15E42 /* FormViewController.swift */; };
-		F8494775215AC5D000E15E42 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8494774215AC5D000E15E42 /* Storyboards.swift */; };
-		F8494778215ACDA200E15E42 /* Services.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8494777215ACDA200E15E42 /* Services.plist */; };
-		F849477A215ACEF200E15E42 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8494779215ACEF200E15E42 /* Constants.swift */; };
 		F8AAE03C215A9653003BD465 /* PagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AAE03B215A9653003BD465 /* PagesTableViewCell.swift */; };
 		F8AAE03E215A9667003BD465 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AAE03D215A9667003BD465 /* CharacterTableViewCell.swift */; };
 		F8AAE040215A966F003BD465 /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AAE03F215A966F003BD465 /* ItemsTableViewCell.swift */; };
@@ -60,29 +47,16 @@
 		F80604A8215960480086390D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F80604AB215960480086390D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F80604AD215960480086390D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F80604B42159653C0086390D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		F80604B62159655D0086390D /* CampaignTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignTableViewController.swift; sourceTree = "<group>"; };
 		F80604B8215965FB0086390D /* CampaignSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignSplashViewController.swift; sourceTree = "<group>"; };
-		F80604BA2159664D0086390D /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
 		F80604BC2159665E0086390D /* PagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesTableViewController.swift; sourceTree = "<group>"; };
-		F80604BE215966670086390D /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
-		F80604C02159667F0086390D /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		F80604C22159668B0086390D /* PagesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesDetailViewController.swift; sourceTree = "<group>"; };
-		F80604C4215966A60086390D /* ItemsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsDetailViewController.swift; sourceTree = "<group>"; };
-		F80604C6215966B80086390D /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		F80604C92159C15F0086390D /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		F80604CB2159C2800086390D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F842963E215BFCC200DB25E9 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		F8429640215C043000DB25E9 /* CampaignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignController.swift; sourceTree = "<group>"; };
 		F8429642215C43B800DB25E9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F8429644215C498300DB25E9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		F8494767215AAB7C00E15E42 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
-		F849476B215AACF900E15E42 /* OAuth Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OAuth Helper.swift"; sourceTree = "<group>"; };
-		F849476E215AC47000E15E42 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		F8494770215AC50200E15E42 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
-		F8494772215AC57B00E15E42 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
-		F8494774215AC5D000E15E42 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
-		F8494777215ACDA200E15E42 /* Services.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Services.plist; sourceTree = "<group>"; };
-		F8494779215ACEF200E15E42 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F8AAE03B215A9653003BD465 /* PagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesTableViewCell.swift; sourceTree = "<group>"; };
 		F8AAE03D215A9667003BD465 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		F8AAE03F215A966F003BD465 /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
@@ -124,14 +98,12 @@
 				F80604A1215960480086390D /* AppDelegate.swift */,
 				F80604C82159C0240086390D /* Models */,
 				F8AAE042215AA740003BD465 /* Model Controllers */,
-				F8AAE041215A9B9A003BD465 /* TableViewControllers */,
 				F8AAE03A215A961B003BD465 /* Cells */,
 				F80604B3215965010086390D /* ViewControllers */,
+				F8429642215C43B800DB25E9 /* Main.storyboard */,
 				F80604A8215960480086390D /* Assets.xcassets */,
 				F80604AA215960480086390D /* LaunchScreen.storyboard */,
 				F80604AD215960480086390D /* Info.plist */,
-				F849476D215AC45700E15E42 /* OAuth Support */,
-				F8429642215C43B800DB25E9 /* Main.storyboard */,
 			);
 			path = "Obsidian Portal App Interface";
 			sourceTree = "<group>";
@@ -139,12 +111,10 @@
 		F80604B3215965010086390D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F80604B42159653C0086390D /* OnboardingViewController.swift */,
+				F80604BC2159665E0086390D /* PagesTableViewController.swift */,
 				F80604B8215965FB0086390D /* CampaignSplashViewController.swift */,
 				F80604C22159668B0086390D /* PagesDetailViewController.swift */,
-				F80604C02159667F0086390D /* CharacterDetailViewController.swift */,
-				F80604C4215966A60086390D /* ItemsDetailViewController.swift */,
-				F80604C6215966B80086390D /* PreferencesViewController.swift */,
+				F8429644215C498300DB25E9 /* RootViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -159,20 +129,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F849476D215AC45700E15E42 /* OAuth Support */ = {
-			isa = PBXGroup;
-			children = (
-				F849476B215AACF900E15E42 /* OAuth Helper.swift */,
-				F849476E215AC47000E15E42 /* WebView.swift */,
-				F8494770215AC50200E15E42 /* Services.swift */,
-				F8494772215AC57B00E15E42 /* FormViewController.swift */,
-				F8494774215AC5D000E15E42 /* Storyboards.swift */,
-				F8494777215ACDA200E15E42 /* Services.plist */,
-				F8494779215ACEF200E15E42 /* Constants.swift */,
-			);
-			path = "OAuth Support";
-			sourceTree = "<group>";
-		};
 		F8AAE03A215A961B003BD465 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,17 +137,6 @@
 				F8AAE03F215A966F003BD465 /* ItemsTableViewCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		F8AAE041215A9B9A003BD465 /* TableViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				F80604B62159655D0086390D /* CampaignTableViewController.swift */,
-				F80604BC2159665E0086390D /* PagesTableViewController.swift */,
-				F80604BA2159664D0086390D /* CharacterTableViewController.swift */,
-				F80604BE215966670086390D /* ItemsTableViewController.swift */,
-			);
-			path = TableViewControllers;
 			sourceTree = "<group>";
 		};
 		F8AAE042215AA740003BD465 /* Model Controllers */ = {
@@ -263,7 +208,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8494778215ACDA200E15E42 /* Services.plist in Resources */,
 				F80604AC215960480086390D /* LaunchScreen.storyboard in Resources */,
 				F80604A9215960480086390D /* Assets.xcassets in Resources */,
 				F8429643215C43B800DB25E9 /* Main.storyboard in Resources */,
@@ -300,30 +244,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F80604CC2159C2800086390D /* User.swift in Sources */,
-				F80604C5215966A60086390D /* ItemsDetailViewController.swift in Sources */,
 				F842963F215BFCC200DB25E9 /* Page.swift in Sources */,
 				F8AAE03E215A9667003BD465 /* CharacterTableViewCell.swift in Sources */,
 				F80604CA2159C15F0086390D /* Campaign.swift in Sources */,
-				F8494775215AC5D000E15E42 /* Storyboards.swift in Sources */,
-				F80604BB2159664E0086390D /* CharacterTableViewController.swift in Sources */,
-				F849477A215ACEF200E15E42 /* Constants.swift in Sources */,
-				F8494771215AC50200E15E42 /* Services.swift in Sources */,
+				F8429645215C498300DB25E9 /* RootViewController.swift in Sources */,
 				F8AAE03C215A9653003BD465 /* PagesTableViewCell.swift in Sources */,
 				F80604C32159668B0086390D /* PagesDetailViewController.swift in Sources */,
 				F8AAE044215AA76E003BD465 /* PagesController.swift in Sources */,
-				F8494773215AC57B00E15E42 /* FormViewController.swift in Sources */,
-				F849476C215AACF900E15E42 /* OAuth Helper.swift in Sources */,
-				F80604BF215966670086390D /* ItemsTableViewController.swift in Sources */,
 				F8429641215C043000DB25E9 /* CampaignController.swift in Sources */,
 				F8AAE040215A966F003BD465 /* ItemsTableViewCell.swift in Sources */,
 				F80604B9215965FB0086390D /* CampaignSplashViewController.swift in Sources */,
-				F80604B72159655D0086390D /* CampaignTableViewController.swift in Sources */,
-				F849476F215AC47000E15E42 /* WebView.swift in Sources */,
-				F80604B52159653C0086390D /* OnboardingViewController.swift in Sources */,
 				F80604BD2159665E0086390D /* PagesTableViewController.swift in Sources */,
-				F80604C12159667F0086390D /* CharacterDetailViewController.swift in Sources */,
 				F80604A2215960480086390D /* AppDelegate.swift in Sources */,
-				F80604C7215966B80086390D /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

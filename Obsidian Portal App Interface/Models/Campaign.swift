@@ -9,23 +9,23 @@
 import Foundation
 
 struct Campaign: Codable, Equatable {
-    init(id: UUID = UUID(), name: String, gameMasters: [User] = [], players: [User] = [], description: String = "A new campaign", system: system = .dnd5e, pages: [Page] = []) {
+    init(id: UUID = UUID(), name: String, /* gameMasters: [User] = [], players: [User] = [], */ description: String = "A new campaign", system: system = .dnd5e /*, pages: [Page] = []*/ ) {
         self.id = id
         self.name = name
-        self.gameMasters = gameMasters
-        self.players = players
+        // self.gameMasters = gameMasters
+        // self.players = players
         self.description = description
         self.system = system.rawValue
-        self.pages = pages
+        // self.pages = pages
     }
     
     let id: UUID
     var name: String
-    var gameMasters: [User] // array of user UUIDs?
-    var players: [User] // as above
+    // var gameMasters: [User] // array of user UUIDs?
+    // var players: [User] // as above
     var description: String
     var system: system.RawValue // or possibly enum / enum.rawValue
-    var pages: [Page] // or array of page UUIDs?
+    // var pages: [Page] // or array of page UUIDs?
 }
 
 enum system: String, Codable {
